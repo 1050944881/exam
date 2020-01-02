@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>天津旅游网站</title>
+<link rel="stylesheet" href="style/style.css">
+<script type="text/javascript" src="js/lrtk.js"></script>
+<script type="text/javascript" src="js/top.js"></script>
+<style>
+/*表单样式开始*/
+input ,textarea ,select { outline: none; border: 1px solid #fff; }
+table { width: 700px; margin: 10px auto; border:1px solid #fff; }
+table h3 { color: #fff; font-size: 28px; font-weight: 700; }
+td , tr { border: 1px solid #fff;  }
+table , td , tr { border-collapse: collapse; }
+td { padding: 5px; color: #fff; }
+table textarea { width: 500px;height: 130px; resize: none; }
+.niu { text-align: center; }
+.niu input { width: 80px; height: 40px; font-size: 22px; }
+.biaodan { width: 1000px; margin: 0 auto 10px; background-color: #459df5; padding: 20px 0; border-radius: 5px; border: 1px solid white; }
+/*表单样式结束*/
+</style>
+<!-- 子页左右模块里的jq动画开始 -->
+  <script src="jq/jquery-1.12.4.js"></script>
+  <script>
+    $(function () {
+      
+      //找不到对象
+      $(function () {
+        // 给左侧li元素注册鼠标进入事件
+        $("#left>li").mouseenter(function () {
+          //让center中对应下标的li显示，其他li隐藏
+          $("#center>li:eq(" + $(this).index() + ")").show().siblings().hide();
+        });
+        // 给右侧li元素注册鼠标进入事件
+        $("#right>li").mouseenter(function () {
+          //让center中对应下标的li显示，其他li隐藏 注意li的索引值
+          $("#center>li").eq($(this).index() + 9).show().siblings().hide();
+        });
+      })
+    });
+  </script>
+  <!-- 子页左右模块里的jq动画结束 -->
+</head>
+<body>
+  <!-- header头部开始 -->
+  <div class="d-banner">
+          <ul>
+            <li><img src="images/logo.png" alt=""></li>
+            <li><a href="zchy.html">用户注册/登陆</a></li>
+          </ul>
+  </div>
+ <!-- 导航菜单开始 -->
+<div class="navi_body">
+    <div class="navi_head">
+      <div style="width:80%; margin-left:auto; margin-right:auto;">
+        <span>
+          <p class="navi_title"><a href="index.html">网站首页</a></p>
+        </span>
+        <span>
+          <p class="navi_title"><a href="tjjj.html">天津简介</a></p>
+        </span>
+        <span>
+          <p class="navi_title"><a href="lyjddq.html">旅游景点大全</a></p>
+        </span>
+        <span>
+          <p class="navi_title"><a href="tjxc.html">美食住宿</a></p>
+          <p><a href="tjxc.html">天津小吃</a></p>
+          <p><a href="bgjd.html">宾馆酒店</a></p>
+        </span>
+        <span>
+          <p class="navi_title"><a href="tjyry.html">旅游攻略</a></p>
+          <p><a href="tjyry.html">天津一日游</a></p>
+          <p><a href="zjy.html">自驾游</a></p>
+        </span>
+        <span>
+          <p class="navi_title"><a href="tjyx.html">天津印象</a></p>
+        </span>
+         <span>
+          <p class="navi_title"><a href="zchy.html">客户服务</a></p>
+          <p><a href="zchy.html">注册会员</a></p>
+          <p><a href="lxwm.html">联系我们</a></p>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 导航菜单结束 -->
+<!-- header头部结束 -->
+
+<!-- 页面右边js客服部分开始 -->
+<div class="floating_ck">
+  <dl>
+      <dt></dt>
+        <dd class="consult">
+          <span>在线咨询</span>
+          <div class="floating_left"><a href="#">旅游景点在线咨询</a></div>
+        </dd>
+        <dd class="words">
+          <span>在线留言</span>
+            <div class="floating_left"><a href="#">问题在线留言</a></div>
+        </dd>
+        <dd class="quote">
+          <span>旅游门票</span>
+            <div class="floating_left"><a href="#">索要免费门票</a></div>
+        </dd>
+        <dd class="qrcord">
+          <span>扫一扫</span>
+            <div class="floating_left floating_ewm">
+              <i></i>
+                <p class="qrcord_p01">扫一扫<br>赠送神秘大礼</p>
+                <p class="qrcord_p02">全国免费服务热线<br><b>4000-123-123<b></p>
+            </div>
+        </dd>
+        <dd class="return">
+          <span onClick="gotoTop();return false;">返回顶部</span>
+        </dd>
+    </dl>
+</div>
+<!-- 页面右边js客服部分结束 -->
+
+<!-- 左右模块开始 -->
+<div class="main-tongyong">
+                   <div class="zhong-tongyong">
+<!-- 图片特效代码 开始 -->
+<div id="ztbox">
+  <div id="left"></div>
+  <div id="conter">
+    <ul>
+      <li><a href="#"><img src="images/b1.png" /></a></li>
+      <li><a href="#"><img src="images/b2.png" /></a></li>
+      <li><a href="#"><img src="images/b3.png" /></a></li>
+      <li><a href="#"><img src="images/b4.png" /></a></li>
+      <li><a href="#"><img src="images/b5.png" /></a></li>
+      <li><a href="#"><img src="images/b6.png" /></a></li>
+      <li><a href="#"><img src="images/b7.png" /></a></li>
+    </ul>
+    <div id="scroll"> <span></span> </div>
+  </div>
+  <div id="right"></div>
+</div>
+<!-- 烀片特效代码 结束 -->
+                   </div>
+
+                   <div class="you-tongyong">
+<!-- jq动画部分开始 -->
+<div class="wrapper">
+  
+  <ul id="left">
+    <li><a href="#">景点1</a></li>
+    <li><a href="#">景点2</a></li>
+    <li><a href="#">景点3</a></li>
+    <li><a href="#">景点4</a></li>
+    <li><a href="#">景点5</a></li>
+    <li><a href="#">景点6</a></li>
+    <li><a href="#">景点7</a></li>
+    <li><a href="#">景点8</a></li>
+    <li><a href="#">景点9</a></li>
+    <li><a href="#">景点10</a></li>
+    <li><a href="#">景点11</a></li>
+    <li><a href="#">景点12</a></li>
+    <li><a href="#">景点13</a></li>
+  </ul>
+  <ul id="center">
+    <li><a href="#"><img src="images/jq1.jpg" width="206" height="358"/></a></li>
+    <li><a href="#"><img src="images/jq2.jpg" width="206" height="358"/></a></li>
+    <li><a href="#"><img src="images/jq3.jpg" width="206" height="358"/></a></li>
+    <li><a href="#"><img src="images/jq4.jpg" width="206" height="358"/></a></li>
+    <li><a href="#"><img src="images/jq5.jpg" width="206" height="358"/></a></li>
+    <li><a href="#"><img src="images/jq6.jpg" width="206" height="358"/></a></li>
+    <li><a href="#"><img src="images/jq7.jpg" width="206" height="358"/></a></li>
+    <li><a href="#"><img src="images/jq8.jpg" width="206" height="358"/></a></li>
+    <li><a href="#"><img src="images/jq9.jpg" width="206" height="358"/></a></li>
+    <li><a href="#"><img src="images/jq10.jpg" width="206" height="358"/></a></li>
+    <li><a href="#"><img src="images/jq11.jpg" width="206" height="358"/></a></li>
+    <li><a href="#"><img src="images/jq12.jpg" width="206" height="358"/></a></li>
+    <li><a href="#"><img src="images/jq13.jpg" width="206" height="358"/></a></li>
+  </ul>
+</div>
+<!-- jq动画部分结束 -->
+                   </div>
+</div>
+<!-- 左右模板结束 -->
+
+<!-- 表单开始 -->
+<div class="biaodan">
+<form >
+  <table>
+    <caption><h3>会 员 注 册</h3></caption>
+      <tr>
+      <td>用户名：</td>
+      <td><input type="text"> 用户名应为4-6位，支持数字、字母、下划线</td>
+    </tr>
+    <tr>
+      <td>性别：</td>
+      <td><input type="radio" name="sex">男 <input type="radio" name="sex">女</td>
+    </tr>
+    <tr>   
+      <td>生日：</td>
+      <td>
+        <select>
+                  <option>1991</option>
+                  <option>1992</option>
+                  <option>1993</option>
+                  <option>1994</option>
+          </select>
+          <select>
+                  <option>01</option>
+                  <option>02</option>
+                  <option>03</option>
+                  <option>04</option>
+          </select>
+          <select>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+          </select>
+    </td>
+    </tr>
+     <tr>
+      <td>性格：</td>
+      <td><input type="checkbox">游泳 <input type="checkbox">爬山 <input type="checkbox">跳河 <input type="checkbox">下棋 <input type="checkbox">骑自行车 <input type="checkbox">打猎</td>
+    </tr>
+    <tr>   
+      <td>出生地：</td>
+      <td>
+        <select>
+                  <option>请选择省份</option>
+                  <option>河北</option>
+                  <option>山西</option>
+                  <option>江苏</option>
+          </select>
+          <select>
+                  <option>请选择城市</option>
+                  <option>城市1</option>
+                  <option>城市2</option>
+                  <option>城市3</option>
+          </select>
+    </td>
+    </tr>
+    <tr>   
+      <td>居住地：</td>
+      <td>
+        <select>
+                  <option>请选择省份</option>
+                  <option>河北</option>
+                  <option>山西</option>
+                  <option>江苏</option>
+          </select>
+          <select>
+                  <option>请选择城市</option>
+                  <option>城市1</option>
+                  <option>城市2</option>
+                  <option>城市3</option>
+          </select>
+          <input type="checkbox">与出生地一致
+    </td>
+    </tr>
+    <tr>
+      <td>邮箱：</td>
+      <td><input type="email"></td>
+    </tr>
+    <tr>
+      <td>注册日期</td>
+      <td><input type="date"></td>
+    </tr>
+    <tr>
+      <td><label for="sjh">手机号</label></td> 
+      <td><input type="text" id="sjh"></td>
+    </tr>
+    <tr>
+      <td>自我介绍</td>
+      <td><textarea cols="50" rows="10"></textarea></td>
+    </tr>
+    <tr>
+      <td>上传文件</td>
+      <td><input type="file"> 如果您有优秀作品，可点此上传</td>
+    </tr>
+    <tr>
+      <td>密码：</td>
+      <td><input type="password"> 密码为6-20位，可含有中文或英文</td>
+    </tr>
+    <tr>
+      <td>确认密码：</td>
+      <td><input type="password"> </td>
+    </tr>
+    <tr>   
+      <td>密码提示：</td>
+      <td>
+        <select>
+                  <option>请选择</option>
+                  <option>问题一</option>
+                  <option>问题二</option>
+                  <option>问题三</option>
+         </select> 如果密码忘记，可通过回答问题找回密码
+    </td>
+    </tr>
+    <tr>
+      <td>密码答案:</td>
+      <td><input type="text">答案要求5-20位，可含有中文或英文</td> 
+    </tr>
+    <tr>
+      <td>验证码:</td>
+      <td><input type="text"></td>
+    </tr>
+    <tr>
+      <td class="niu" colspan="2"><input type="submit" value="提交">&#12288;&#12288;&#12288;<input type="reset"></td>
+    </tr>
+  </table>
+  </form>
+  </div>
+<!-- 表单结束 -->
+<!-- 底部版权部分开始 -->
+<div class="foot-db"><p>联系电话：18913676253 传真：18913676253 邮箱:1050944881@qq.com 地址：南京工业职业技术学院</p><p>移动1811周非帆----版权所有</p> </div>
+<!-- 底部版权部分结束 -->
+
+</body>
+</html>

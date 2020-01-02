@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>天津旅游网站</title>
+<link rel="stylesheet" href="style/style.css">
+<script type="text/javascript" src="js/lrtk.js"></script>
+<script type="text/javascript" src="js/top.js"></script>
+<style>
+/*页面主体排版样式开始*/
+.ms { width: 1000px; margin: 0 auto; text-align: center;  }
+.ms img { width: 960px; padding: 20px; border: 1px solid #fff; margin: 30px 0; }
+.pai {  width: 970px; margin: 0 auto; overflow: hidden; border: 1px solid #fff; padding: 16px; margin-bottom: 30px; font-size: 16px; }
+/*页面主体排版样式结束*/
+</style>
+<!-- 子页左右模块里的jq动画开始 -->
+  <script src="jq/jquery-1.12.4.js"></script>
+  <script>
+    $(function () {
+      
+      //找不到对象
+      $(function () {
+        // 给左侧li元素注册鼠标进入事件
+        $("#left>li").mouseenter(function () {
+          //让center中对应下标的li显示，其他li隐藏
+          $("#center>li:eq(" + $(this).index() + ")").show().siblings().hide();
+        });
+        // 给右侧li元素注册鼠标进入事件
+        $("#right>li").mouseenter(function () {
+          //让center中对应下标的li显示，其他li隐藏 注意li的索引值
+          $("#center>li").eq($(this).index() + 9).show().siblings().hide();
+        });
+      })
+    });
+  </script>
+  <!-- 子页左右模块里的jq动画结束 -->
+</head>
+<body>
+  <!-- header头部开始 -->
+  <div class="d-banner">
+          <ul>
+            <li><img src="images/logo.png" alt=""></li>
+            <li><a href="zchy.html">用户注册/登陆</a></li>
+          </ul>
+  </div>
+ <!-- 导航菜单开始 -->
+<div class="navi_body">
+    <div class="navi_head">
+      <div style="width:80%; margin-left:auto; margin-right:auto;">
+        <span>
+          <p class="navi_title"><a href="index.html">网站首页</a></p>
+        </span>
+        <span>
+          <p class="navi_title"><a href="tjjj.html">天津简介</a></p>
+        </span>
+        <span>
+          <p class="navi_title"><a href="lyjddq.html">旅游景点大全</a></p>
+        </span>
+        <span>
+          <p class="navi_title"><a href="tjxc.html">美食住宿</a></p>
+          <p><a href="tjxc.html">天津小吃</a></p>
+          <p><a href="bgjd.html">宾馆酒店</a></p>
+        </span>
+        <span>
+          <p class="navi_title"><a href="tjyry.html">旅游攻略</a></p>
+          <p><a href="tjyry.html">天津一日游</a></p>
+          <p><a href="zjy.html">自驾游</a></p>
+        </span>
+        <span>
+          <p class="navi_title"><a href="tjyx.html">天津印象</a></p>
+        </span>
+         <span>
+          <p class="navi_title"><a href="zchy.html">客户服务</a></p>
+          <p><a href="zchy.html">注册会员</a></p>
+          <p><a href="lxwm.html">联系我们</a></p>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 导航菜单结束 -->
+<!-- header头部结束 -->
+
+<!-- 页面右边js客服部分开始 -->
+<div class="floating_ck">
+  <dl>
+      <dt></dt>
+        <dd class="consult">
+          <span>在线咨询</span>
+          <div class="floating_left"><a href="#">旅游景点在线咨询</a></div>
+        </dd>
+        <dd class="words">
+          <span>在线留言</span>
+            <div class="floating_left"><a href="#">问题在线留言</a></div>
+        </dd>
+        <dd class="quote">
+          <span>旅游门票</span>
+            <div class="floating_left"><a href="#">索要免费门票</a></div>
+        </dd>
+        <dd class="qrcord">
+          <span>扫一扫</span>
+            <div class="floating_left floating_ewm">
+              <i></i>
+                <p class="qrcord_p01">扫一扫<br>赠送神秘大礼</p>
+                <p class="qrcord_p02">全国免费服务热线<br><b>4000-123-123<b></p>
+            </div>
+        </dd>
+        <dd class="return">
+          <span onClick="gotoTop();return false;">返回顶部</span>
+        </dd>
+    </dl>
+</div>
+<!-- 页面右边js客服部分结束 -->
+
+<!-- 左右模块开始 -->
+<div class="main-tongyong">
+                   <div class="zhong-tongyong">
+<!-- 图片特效代码 开始 -->
+<div id="ztbox">
+  <div id="left"></div>
+  <div id="conter">
+    <ul>
+      <li><a href="#"><img src="images/b1.png" /></a></li>
+      <li><a href="#"><img src="images/b2.png" /></a></li>
+      <li><a href="#"><img src="images/b3.png" /></a></li>
+      <li><a href="#"><img src="images/b4.png" /></a></li>
+      <li><a href="#"><img src="images/b5.png" /></a></li>
+      <li><a href="#"><img src="images/b6.png" /></a></li>
+      <li><a href="#"><img src="images/b7.png" /></a></li>
+    </ul>
+    <div id="scroll"> <span></span> </div>
+  </div>
+  <div id="right"></div>
+</div>
+<!-- 烀片特效代码 结束 -->
+                   </div>
+
+                   <div class="you-tongyong">
+<!-- jq动画部分开始 -->
+<div class="wrapper">
+  
+  <ul id="left">
+    <li><a href="#">景点1</a></li>
+    <li><a href="#">景点2</a></li>
+    <li><a href="#">景点3</a></li>
+    <li><a href="#">景点4</a></li>
+    <li><a href="#">景点5</a></li>
+    <li><a href="#">景点6</a></li>
+    <li><a href="#">景点7</a></li>
+    <li><a href="#">景点8</a></li>
+    <li><a href="#">景点9</a></li>
+    <li><a href="#">景点10</a></li>
+    <li><a href="#">景点11</a></li>
+    <li><a href="#">景点12</a></li>
+    <li><a href="#">景点13</a></li>
+  </ul>
+  <ul id="center">
+    <li><a href="#"><img src="images/jq1.jpg" width="206" height="358"/></a></li>
+    <li><a href="#"><img src="images/jq2.jpg" width="206" height="358"/></a></li>
+    <li><a href="#"><img src="images/jq3.jpg" width="206" height="358"/></a></li>
+    <li><a href="#"><img src="images/jq4.jpg" width="206" height="358"/></a></li>
+    <li><a href="#"><img src="images/jq5.jpg" width="206" height="358"/></a></li>
+    <li><a href="#"><img src="images/jq6.jpg" width="206" height="358"/></a></li>
+    <li><a href="#"><img src="images/jq7.jpg" width="206" height="358"/></a></li>
+    <li><a href="#"><img src="images/jq8.jpg" width="206" height="358"/></a></li>
+    <li><a href="#"><img src="images/jq9.jpg" width="206" height="358"/></a></li>
+    <li><a href="#"><img src="images/jq10.jpg" width="206" height="358"/></a></li>
+    <li><a href="#"><img src="images/jq11.jpg" width="206" height="358"/></a></li>
+    <li><a href="#"><img src="images/jq12.jpg" width="206" height="358"/></a></li>
+    <li><a href="#"><img src="images/jq13.jpg" width="206" height="358"/></a></li>
+  </ul>
+</div>
+<!-- jq动画部分结束 -->
+                   </div>
+</div>
+<!-- 左右模板结束 -->
+<!-- 页面主体开始 -->
+<div class="ms"><h1 style="margin-top: 30px;">天津简介</h1><img src="images/tj01.jpg"></div>
+<div class="pai">
+  <div class="wen"><p style="line-height: 30px; text-indent: 2em;">天津，中国四大直辖市之一，也是中国北方最大的开放城市和工商业城市。天津简称“津”，意为天子经过的渡口，也称“津沽”、“津门”。
+天津地区在商周时期即有人类居住，但作为城市则形成较晚。隋朝大运河的开通，使位于运河北部、兼有河海运输之便的天津地位日渐重要，运河与“五河尾闾”（今海河）在市区三岔河口交汇，天津便以“三会海口”名于史册。唐朝中叶以后，天津成为南方粮、绸北运的水陆码头。
+天津所在地原来是海洋，四千多年前，在黄河泥沙作用下慢慢露出海底，形成冲积平原。古黄河曾三次改道，在天津附近入海，3000年前在宁河区附近入海，西汉时期在黄骅县附近入海，北宋时在天津南郊入海。金朝时黄河南移，夺淮入海，天津海岸线固定。
+汉武帝，在武清设置盐官。
+隋朝，修建京杭大运河后，在南运河和北运河的交会处（今金刚桥三岔河口），史称三会海口，是天津最早的发祥地。
+唐朝，在芦台开辟了盐场，在宝坻设置盐仓。
+辽朝，在武清设立了“榷盐院”，管理盐务。
+天津
+天津(10张)
+金朝贞佑二年（1214年），在三岔口设直沽寨，直沽是天津城市发展中有史料记载的最早名称。
+元延祐三年（1316），“改直沽为海津镇”，这里成为漕粮运输的转运中心。设立大直沽盐运使司，管理盐的产销。
+明建文二年（1400年），燕王朱棣在此渡过大运河南下争夺皇位。朱棣成为皇帝后，为纪念由此起兵“靖难之役”，在永乐二年十一月二十一日（1404年12月23日）将此地改名为天津，即天子经过的渡口之意。作为军事要地，在三岔河口西南的小直沽一带，天津开始筑城设卫，称天津卫，揭开了天津城市发展新的一页。后又增设天津左卫和天津右卫。
+清顺治九年（1652年），天津卫、天津左卫和天津右卫三卫合并为天津卫，设立民政、盐运和税收、军事等建置。雍正三年（1725年）升天津卫为天津州。雍正九年（1731年）升天津州为天津府，辖六县一州。
+清末时期，天津作为直隶总督的驻地，也成为李鸿章和袁世凯兴办洋务和发展北洋势力的主要基地。
+1860年，英、法联军占领天津，天津被迫开放，列强先后在天津设立租界。
+1900年7月，八国联军攻打天津，天津沦陷。
+1901年，由八国联军组成的天津都统衙门下令拆除城墙。
+清光绪二十八年（1902年）直隶总督衙门迁津。同年中华民国成立，天津改为县，属直隶省。
+
+民国二年（1913年），直隶省省会设于天津。
+1928年6月，国民革命军占领天津，南京国民政府设立天津特别市，同年7月，直隶改称河北，省会仍设天津，10月省会迁北平。
+1930年6月，天津改为直辖市。同年10月，河北省会再迁天津，遂改为省辖市。
+1930年6月，天津特别市改为南京国民政府行政院直辖的天津市。11月，因河北省省会由北平迁至天津，天津直辖市改为省辖市。
+1935年6月，河北省省会迁往保定，天津又改为直辖市。
+1945年8月15日，日本投降后，天津仍为直辖市。
+1949年1月15日凌晨5时，中国人民解放军东西突击集团在金汤桥上胜利会师。17日解放塘沽，天津全境解放，划为华北人民政府直辖市。同年10月1日中华人民共和国成立，天津被定为中央直辖市。
+1958年2月11日，天津改为河北省省辖市。同年4月18日，河北省省会由保定迁到天津。
+1966年5月河北省省会再迁保定。
+1967年1月2日，天津恢复为直辖市至今。 [9]  </p>
+</div>
+</div>
+<div class="ms"><img src="images/tj02.jpg"></div>
+<div class="pai">
+  <div class="wen"><p style="line-height: 30px; text-indent: 2em;">截至2017年底，天津下辖16个市辖区，共有街道、乡、镇245个。市辖区分为中心城区、环城区、滨海新区和远郊区。
+《天津市空间发展战略》提出“双城双港、相向拓展、一轴两带、南北生态”城市规划理念。其中，“双城”是指天津市中心城区和滨海新区核心区；“双港”是指天津港和天津南港；“南北”指市域中北部及南部；“北端”是指蓟州区北部山地丘陵地带。
+中心城区是天津的发祥地，也是政治文化教育经济商业中心。按照服务业功能，中心城区按照“金融和平”、“商务河西”、“科技南开”、“金贸河东”、“创意河北”、“商贸红桥”的功能定位。 [10] 
+滨海新区是天津市下辖的副省级区、国家级新区和国家综合配套改革试验区，是北方对外开放的门户、高水平的现代制造业和研发转化基地、北方国际航运中心和物流中心、宜居生态型新城区。由原塘沽区、汉沽区、大港区以及天津经济技术开发区等区域整合而成。 [10</p>
+</div>
+</div>
+<div class="ms"><img src="images/tj03.jpg"></div>
+<div class="pai">
+  <div class="wen"><p style="line-height: 30px; text-indent: 2em;">天津地处华北平原北部，东临渤海、北依燕山，位于东经116°43'至118°04'，北纬38°34'至40°15'之间。市中心位于东经117°10'，北纬39°10'。天津位于海河下游，地跨海河两岸，北南长189千米，西东宽117千米。陆界长1137千米，海岸线长153千米。是北京通往东北、华东地区铁路的交通咽喉和远洋航运的港口，有“河海要冲”和“畿辅门户”之称。对内腹地辽阔，辐射华北、东北、西北13个省市自治区，对外面向东北亚，是中国北方最大的沿海开放城市。  </p>
+</div>
+</div>
+<div class="ms"><img src="images/tj04.jpg"></div>
+<div class="pai">
+  <div><p style="line-height: 30px; text-indent: 2em;">天津地质构造复杂，大部分被新生代沉积物覆盖。地势以平原和洼地为主，北部有低山丘陵，海拔由北向南逐渐下降。北部最高，海拔1052米；东南部最低，海拔3.5米。全市最高峰：九山顶（海拔1078.5米）。地貌总轮廓为西北高而东南低。
+天津有山地、丘陵和平原三种地形，平原约占93%。除北部与燕山南侧接壤之处多为山地外，其余均属冲积平原，蓟县北部山地为海拔千米以下的低山丘陵。靠近山地是由洪积冲积扇组成的倾斜平原，呈扇状分布。倾斜平原往南是冲积平原，东南是滨海平原。 [11] 
+气候
+天津地处北温带位于中纬度亚欧大陆东岸，主要受季风环流的支配，是东亚季风盛行的地区，属暖温带半湿润季风性气候。临近渤海湾，海洋气候对天津的影响比较明显。
+主要气候特征是，四季分明，春季多风，干旱少雨；夏季炎热，雨水集中；秋季气爽，冷暖适中；冬季寒冷，干燥少雪，因此，春末夏初和秋天是到天津旅游的最佳季节。冬半年多西北风，气温较低，降水也少；夏半年太平洋副热带暖高压加强，以偏南风为主，气温高，降水也多。有时会有春旱。天津的年平均气温约为14℃，7月最热，月平均温度28℃；历史最高温度是41.6℃。1月最冷，月平均温度-2℃。历史最低温度是-17.8℃。年平均降水量在360－970毫米之间，（1949－2010）平均值是600毫米上 </p>
+</div>
+</div>
+<!-- 页面主体结束 -->
+<!-- 页面底部联系及版权开始 -->
+<div class="foot-db"><p>联系电话：18913676253 传真：18913676253 邮箱:1050944881@qq.com 地址：南京工业职业技术学院</p><p>移动1811周非帆----版权所有</p> </div>
+<!-- 页面底部联系及版权结束 -->
+</body>
+</html>

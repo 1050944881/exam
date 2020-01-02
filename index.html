@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>天津旅游网站</title>
+<link rel="stylesheet" href="style/style.css">
+<style>
+/*景点推荐开始*/
+.jdtj { width: 1000px; float: left; background-color: #fff; padding: 5px; border-radius: 5px; }
+.jdtj h3 { text-indent: 1em; line-height: 40px; color: #09F; }
+.zt { text-align: center; }
+.zt img { width: 220px; height: 122px; padding: 5px; border: 1px solid #09F; }
+.zt img:hover { background-color: #09F; }
+.zt h4 { line-height: 24px; color: #09F }
+.zt ul li { float: left; margin: 0 8px; }
+/*景点推荐结束*/
+/*小吃推荐，宾馆酒店，开始*/
+.list-y { width: 230px; height: 219px; border:1px solid #09F; margin-left: 13px;}
+.list-y li { width: 100%; border-bottom: 1px dashed #09F; line-height: 43px; text-indent:1em; }
+.list-y a { color: black; text-decoration: none; font-size: 16px; font-family: "微软雅黑"  }
+.list-y a:hover { color: red; }
+/*小吃推荐，宾馆酒店，开始*/
+/*banner图片开始*/
+.banner{ width:700px; height:313px; overflow:hidden; font-size:0;margin: 5px auto 0;}
+.banner img { width: 700px; height: 313px; }
+/*banner图片结束*/
+/*美景寻踪开始*/
+.tuijian { width: 700px; margin: 0 auto; overflow: hidden; }
+.tuijian a { color: black; text-decoration: none; }
+.tuijian a:hover { color: #c10303; }
+.tuijian img:hover { background-color: #09F; }
+.tuijian h3 { text-align: left; }
+.tuijian-you { width: 700px; height: 200px; float: right; }
+.tuijian-you img { width: 100px; height: 150px; padding: 2px; border: 1px solid #ccc; }
+.tuijian-you li { float: left; margin-left: 10px; text-align: center; }
+.tuijian-you h4 { line-height: 50px; }
+/*美景寻踪结束*/
+/*线路精选开始*/
+.xljx { width: 700px; height: 150px; border:1px solid #09F; margin-left: 5px;}
+.xljx li { width: 100%; border-bottom: 1px dashed #09F; line-height: 45px; text-indent:1em; }
+.xljx a { color: black; text-decoration: none; font-size: 16px; font-family: "微软雅黑"  }
+.xljx a:hover { color: red; }
+/*线路精选结束*/
+</style>
+</head>
+<body>
+  <!-- header头部开始 -->
+	<div class="d-banner">
+          <ul>
+            <li><img src="images/logo.png" alt=""></li>
+            <li><a href="zchy.html">用户注册/登陆</a></li>
+          </ul>
+  </div>
+  <!-- 导航菜单开始 -->
+<div class="navi_body">
+    <div class="navi_head">
+      <div style="width:80%; margin-left:auto; margin-right:auto;">
+        <span>
+          <p class="navi_title"><a href="index.html">网站首页</a></p>
+        </span>
+        <span>
+          <p class="navi_title"><a href="tjjj.html">天津简介</a></p>
+        </span>
+        <span>
+          <p class="navi_title"><a href="lyjddq.html">旅游景点大全</a></p>
+        </span>
+        <span>
+          <p class="navi_title"><a href="tjxc.html">美食住宿</a></p>
+          <p><a href="tjxc.html">天津小吃</a></p>
+          <p><a href="bgjd.html">宾馆酒店</a></p>
+        </span>
+        <span>
+          <p class="navi_title"><a href="tjyry.html">旅游攻略</a></p>
+          <p><a href="tjyry.html">天津一日游</a></p>
+          <p><a href="zjy.html">自驾游</a></p>
+        </span>
+        <span>
+          <p class="navi_title"><a href="tjyx.html">天津印象</a></p>
+        </span>
+         <span>
+          <p class="navi_title"><a href="zchy.html">客户服务</a></p>
+          <p><a href="zchy.html">注册会员</a></p>
+          <p><a href="lxwm.html">联系我们</a></p>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 导航菜单结束 -->
+<!-- header头部结束 -->
+<!-- 页面右边js客服部分开始 -->
+<div class="floating_ck">
+  <dl>
+      <dt></dt>
+        <dd class="consult">
+          <span>在线咨询</span>
+          <div class="floating_left"><a href="#">旅游景点在线咨询</a></div>
+        </dd>
+        <dd class="words">
+          <span>在线留言</span>
+            <div class="floating_left"><a href="#">问题在线留言</a></div>
+        </dd>
+        <dd class="quote">
+          <span>旅游门票</span>
+            <div class="floating_left"><a href="#">索要免费门票</a></div>
+        </dd>
+        <dd class="qrcord">
+          <span>扫一扫</span>
+            <div class="floating_left floating_ewm">
+              <i></i>
+                <p class="qrcord_p01">扫一扫<br>赠送神秘大礼</p>
+                <p class="qrcord_p02">全国免费服务热线<br><b>4000-123-123<b></p>
+            </div>
+        </dd>
+        <dd class="return">
+          <span onClick="gotoTop();return false;">返回顶部</span>
+        </dd>
+    </dl>
+</div>
+<!-- 页面右边js客服部分结束 -->
+<div class="main">
+<div class="zhong">
+  <!-- banner开始 -->
+<div class="banner">
+                    <div> <a href="#"><img src="images/banner1.jpg" ></a></div>
+</div>
+<!-- banner结束 -->
+<!-- 美景寻踪开始 -->
+<div class="tuijian">
+<div class="tuijian-you">
+  <ul> <h3>美景寻踪</h3>
+        <li>
+          <a href="#"><img src="images/m1.jpg" > </a>
+    </li>
+    <li>
+          <a href="#"><img src="images/m2.jpg" > </a>
+    </li>
+    <li>
+         <a href="#"><img src="images/m3.jpg" > </a>
+    </li>
+    <li>
+          <a href="#"><img src="images/m4.jpg" > </a>
+    </li>
+    <li>
+          <a href="#"><img src="images/m5.jpg" > </a>
+    </li>
+    <li>
+          <a href="#"><img src="images/m6.jpg" > </a>
+    </li>
+  </ul><br>
+</div>
+</div>
+<!-- 美景寻踪结束 -->
+<!-- 线路精选开始 -->
+  <div class="menu">
+    <ul><h3>线路精选</h3>
+      <li>
+          <div class="xljx">
+              <ul>
+                  <li><a href="#">天津深度游：详细行程安排+地道美食+经典步行路线</a></li>
+              </ul>
+              <ul>
+                  <li><a href="#">5天，一个人再会天津，今天不再伤悲</a></li>
+              </ul>
+              <ul>
+                  <li><a href="#">天津印象——7日全景深度游路线</a></li>
+              </ul>
+          </div>
+      </li>
+    </ul>
+  </div>
+<!-- 线路精选结束 -->
+      </div>
+  <div class="you">
+<!-- 梨木台景区开始 -->
+      <div>
+           <h3>梨木台景区</h3>
+           <div class="zt">
+               <a href="#"><img src="images/y-1.jpg" ></a>
+           </div>
+      </div>
+<!-- 梨木台景区结束 -->
+  <div class="menu-y">
+    <ul><h3>小吃推荐</h3>
+      <li>
+                <div class="list-y">
+                  <ul>
+                    <li><a href="#">天津小吃——锅巴菜</a></li>
+                  </ul>
+                  <ul>
+                    <li><a href="#">天津小吃——黑蒜子牛肉粒</a></li>
+                  </ul>
+                  <ul>
+                    <li><a href="#">天津小吃——玫瑰花蜜</a></li>
+                  </ul>
+                  <ul>
+                    <li><a href="#">天津小吃——酱香饼</a></li>
+                  </ul>
+                  <ul>
+                    <li><a href="#">天津小吃——干煸鱿鱼须</a></li>
+                  </ul>
+                </div>
+      </li>
+    </ul>
+  </div>
+
+  <div class="menu-y">
+    <ul><h3>宾馆酒店</h3>
+      <li>
+                <div class="list-y">
+                  <ul>
+                    <li><a href="#">天津空港白云酒店</a></li>
+                  </ul>
+                  <ul>
+                    <li><a href="#">天津利顺德大饭店</a></li>
+                  </ul>
+                  <ul>
+                    <li><a href="#">天津金皇大酒店</a></li>
+                  </ul>
+                  <ul>
+                    <li><a href="#">天津富力万达文华酒店</a></li>
+                  </ul>
+                  <ul>
+                    <li><a href="#">天津友谊宾馆</a></li>
+                  </ul>
+                </div>
+      </li>
+    </ul>
+  </div>
+  </div></div>
+<!-- 景点推荐开始 -->
+	<div class="main">
+      <div class="jdtj">
+           <h3>景点推荐</h3>
+         <div class="zt">
+          <ul>
+            <li><a href="#"><img src="images/z-1.jpg" ></a><h4>南开大学</h4></li>
+            <li><a href="#"><img src="images/z-2.jpg" ></a><h4>五大道</h4></li>
+            <li><a href="#"><img src="images/z-3.jpg" ></a><h4>静园</h4></li>
+            <li><a href="#"><img src="images/z-4.jpg" ></a><h4>天津之眼摩天轮</h4></li>
+          </ul>
+         </div>
+      </div>
+	</div>
+  <!-- 景点推荐结束 -->
+  <!-- 底部版权信息开始 -->
+<div class="foot-db"><p>联系电话：18913676253 传真：18913676253 邮箱:1050944881@qq.com 地址：南京工业职业技术学院</p><p>移动1811周非帆----版权所有</p> </div>
+<!-- 底部版权信息结束 -->
+</body>
+</html>

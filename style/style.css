@@ -1,0 +1,82 @@
+* { padding: 0; margin: 0; }
+  li { list-style: none; }
+  body { background-color: skyblue; }
+/*头部header开始*/
+.d-banner { width: 1000px; margin: 10px auto; padding: 5px; background-color: #fff; border-radius: 5px; overflow: hidden; }
+.d-banner ul li:first-child { float: left; }
+.d-banner ul li:last-child { float: right; padding-right: 10px; }
+.d-banner ul li a { font: 700 36px/100px "微软雅黑"; text-decoration: none; color: skyblue; }
+.d-banner ul li a:hover { color: red; }
+/*头部header结束*/
+
+/*二级导航菜单开始*/
+.navi_head{height:50px; background-color:#459df5; } 
+.navi_body{overflow:hidden; height:50px; background:rgba(36,97,158,0.9); transition:height ease 0.5s; } 
+.navi_body:hover{height:150px; } 
+.navi_head>div>span{width:150px; text-align:center; height:300px; display:inline-block; font-weight:bold; color:#FFF; font-size:14px; vertical-align:top; } 
+.navi_head>div>span>p a{color:#FFF; text-decoration:none; } 
+.navi_head>div>span>p a:hover{color:red; text-decoration:underline; } 
+.navi_head>div>span>p:nth-child(2) { margin: 10px auto; }
+.navi_title{font-size:16px; line-height:50px; margin-top:0; } 
+.navi_head>div>span:hover{background:rgba(100,100,100,0.2); }
+/*二级导航菜单结束*/
+
+/*子页左右模板里的js动画*/
+#ztbox {width:970px; height:420px; margin:0 auto;}
+#ztbox #left { width:35px; height:63px; float:left; cursor:pointer;background:url(../images/banner_pre.jpg) no-repeat; margin-top:140px;}
+#ztbox #right{ width:35px; height:63px; float:left; cursor:pointer;background:url(../images/banner_next.jpg) no-repeat;  margin-top:140px;}
+#ztbox #conter { width:610px; height:368px; float:left; display:inline; overflow:hidden; position:relative; margin:0px 10px;}
+#ztbox #conter ul { width:auto; height:357px; top:0px; left:0px; position:absolute; overflow:hidden;}
+#ztbox #conter li { width:160px; height:357px; float:left;padding:0px 20px; position:relative;}
+#ztbox #conter li img { width:190px; height:356px;}
+#ztbox #scroll { width:880px; height:18px; left:0px; bottom:8px; cursor:pointer; position:absolute; background:url(../images/banner_bg_xi.jpg) repeat-x left center; }
+#ztbox #scroll span { width:48px; height:18px; left:0px; bottom:0px; cursor:pointer; position:absolute; background:#FFEA00; }
+/*子页左右模板里的js动画*/
+
+/*子页左右模块里的jq动画开始*/
+.wrapper {width: 256px; height: 358px; margin: 0 auto; border: 1px solid skyblue; overflow: hidden; }
+#left, #center{float: left; }
+#left li {background: url(../images/lili.jpg) repeat-x; } 
+#left li a {display: block; width: 48px; height: 27px; border-bottom: 1px solid skyblue; line-height: 27px; 
+            text-align: center; font-size: 14px;  } 
+#left li a:hover {background-image: url(../images/abg.gif);  } 
+#center {border-left: 1px solid skyblue; } 
+/*子页左右模块里的jq动画开始*/
+
+/*页面右边js客服特效开始*/
+.floating_ck{position:fixed;right:20px;top:30%;}
+.floating_ck dl dd{position:relative;width:80px;height:80px;background-color:#646577;border-bottom:solid 1px #555666;text-align:center;background-repeat:no-repeat;background-position:center 20%;cursor:pointer;}
+.floating_ck dl dd:hover{background-color:#e40231;border-bottom:solid 1px #a40324;}
+.floating_ck dl dd:hover .floating_left{display:block;}
+.consult,.words{background-image:url(../images/icon0701/zxicon.png);}
+.quote{background-image:url(../images/icon0701/kficon.png);}
+.qrcord{background-image:url(../images/icon0701/erweima.png);}
+.return{background-image:url(../images/icon0701/fanhui.png);}
+.floating_ck dd span{color:#fff;display:block;padding-top:54px;}
+.floating_left{position:absolute;left:-160px;top:0px;width:160px;height:80px;background-color:#e40231;border-bottom:solid 1px #a40324;display:none;}
+.floating_left a{color:#fff;line-height:80px;}
+.floating_ewm{height:260px;top:-180px;}
+.floating_ewm i{background-image:url(../images/erweima.png);display:block;width:145px;height:145px;margin:auto;margin-top:7px;}
+.floating_ewm p{color:#fff;margin-top:5px;}
+.floating_ewm .qrcord_p01{font-size:12px;line-height:20px;}
+.floating_ewm .qrcord_p02{font-size:18px;}
+/*页面右边js客服特效开始*/
+
+/*首页左右模块开始*/
+.main { width: 1000px; margin: 10px auto; overflow: hidden;  }
+.zhong { width: 710px; height: 721px; float: left; background-color: #fff; padding: 5px; border-radius: 5px; }
+.zhong h3 { text-indent: 1em; line-height: 40px; color: #09F; }
+.you { width: 260px; height: 721px; float: right; background-color: #fff; padding: 5px; border-radius: 5px; }
+.you h3 { text-indent: 1em; line-height: 43px; color: #09F; }
+/*首页左右模块结束*/
+
+/*子页左右模板通用，开始*/
+.main-tongyong { width: 1000px; margin: 10px auto; overflow: hidden;  }
+.zhong-tongyong { width: 700px; height: 360px; float: left; background-color: #459df5; padding: 5px; border-radius: 5px; border: 2px solid white; }
+.you-tongyong { width: 260px; height: 360px; float: right; background-color: #459df5; padding: 5px; border-radius: 5px; border: 2px solid white; }  
+/*子页左右模板通用，结束*/
+
+/*页面底部版权开始*/
+.foot-db { width: 100%; height: 90px; background-color: #09F; color: #fff; text-align: center; padding-top: 45px; line-height: 30px; }
+/*页面底部版权结束*/
+       

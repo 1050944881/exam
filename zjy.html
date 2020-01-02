@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>天津旅游网站</title>
+<link rel="stylesheet" href="style/style.css">
+<script type="text/javascript" src="js/lrtk.js"></script>
+<script type="text/javascript" src="js/top.js"></script>
+<style>
+/*页面主体排版样式开始*/
+.ms { width: 1000px; margin: 0 auto; text-align: center;  }
+.ms img { width: 960px; padding: 20px; border: 1px solid #fff; margin: 30px 0; }
+.pai {  width: 970px; margin: 0 auto; overflow: hidden; border: 1px solid #fff; padding: 16px; margin-bottom: 30px; font-size: 16px; }
+/*页面主体排版样式结束*/
+</style>
+<!-- 子页左右模块里的jq动画开始 -->
+  <script src="jq/jquery-1.12.4.js"></script>
+  <script>
+    $(function () {
+      
+      //找不到对象
+      $(function () {
+        // 给左侧li元素注册鼠标进入事件
+        $("#left>li").mouseenter(function () {
+          //让center中对应下标的li显示，其他li隐藏
+          $("#center>li:eq(" + $(this).index() + ")").show().siblings().hide();
+        });
+        // 给右侧li元素注册鼠标进入事件
+        $("#right>li").mouseenter(function () {
+          //让center中对应下标的li显示，其他li隐藏 注意li的索引值
+          $("#center>li").eq($(this).index() + 9).show().siblings().hide();
+        });
+      })
+    });
+  </script>
+  <!-- 子页左右模块里的jq动画结束 -->
+</head>
+<body>
+  <!-- header头部开始 -->
+  <div class="d-banner">
+          <ul>
+            <li><img src="images/logo.png" alt=""></li>
+            <li><a href="zchy.html">用户注册/登陆</a></li>
+          </ul>
+  </div>
+ <!-- 导航菜单开始 -->
+<div class="navi_body">
+    <div class="navi_head">
+      <div style="width:80%; margin-left:auto; margin-right:auto;">
+        <span>
+          <p class="navi_title"><a href="index.html">网站首页</a></p>
+        </span>
+        <span>
+          <p class="navi_title"><a href="tjjj.html">天津简介</a></p>
+        </span>
+        <span>
+          <p class="navi_title"><a href="lyjddq.html">旅游景点大全</a></p>
+        </span>
+        <span>
+          <p class="navi_title"><a href="tjxc.html">美食住宿</a></p>
+          <p><a href="tjxc.html">天津小吃</a></p>
+          <p><a href="bgjd.html">宾馆酒店</a></p>
+        </span>
+        <span>
+          <p class="navi_title"><a href="tjyry.html">旅游攻略</a></p>
+          <p><a href="tjyry.html">天津一日游</a></p>
+          <p><a href="zjy.html">自驾游</a></p>
+        </span>
+        <span>
+          <p class="navi_title"><a href="tjyx.html">天津印象</a></p>
+        </span>
+         <span>
+          <p class="navi_title"><a href="zchy.html">客户服务</a></p>
+          <p><a href="zchy.html">注册会员</a></p>
+          <p><a href="lxwm.html">联系我们</a></p>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 导航菜单结束 -->
+<!-- header头部结束 -->
+
+<!-- 页面右边js客服部分开始 -->
+<div class="floating_ck">
+  <dl>
+      <dt></dt>
+        <dd class="consult">
+          <span>在线咨询</span>
+          <div class="floating_left"><a href="#">旅游景点在线咨询</a></div>
+        </dd>
+        <dd class="words">
+          <span>在线留言</span>
+            <div class="floating_left"><a href="#">问题在线留言</a></div>
+        </dd>
+        <dd class="quote">
+          <span>旅游门票</span>
+            <div class="floating_left"><a href="#">索要免费门票</a></div>
+        </dd>
+        <dd class="qrcord">
+          <span>扫一扫</span>
+            <div class="floating_left floating_ewm">
+              <i></i>
+                <p class="qrcord_p01">扫一扫<br>赠送神秘大礼</p>
+                <p class="qrcord_p02">全国免费服务热线<br><b>4000-123-123<b></p>
+            </div>
+        </dd>
+        <dd class="return">
+          <span onClick="gotoTop();return false;">返回顶部</span>
+        </dd>
+    </dl>
+</div>
+<!-- 页面右边js客服部分结束 -->
+
+<!-- 左右模块开始 -->
+<div class="main-tongyong">
+                   <div class="zhong-tongyong">
+<!-- 图片特效代码 开始 -->
+<div id="ztbox">
+  <div id="left"></div>
+  <div id="conter">
+    <ul>
+      <li><a href="#"><img src="images/b1.png" /></a></li>
+      <li><a href="#"><img src="images/b2.png" /></a></li>
+      <li><a href="#"><img src="images/b3.png" /></a></li>
+      <li><a href="#"><img src="images/b4.png" /></a></li>
+      <li><a href="#"><img src="images/b5.png" /></a></li>
+      <li><a href="#"><img src="images/b6.png" /></a></li>
+      <li><a href="#"><img src="images/b7.png" /></a></li>
+    </ul>
+    <div id="scroll"> <span></span> </div>
+  </div>
+  <div id="right"></div>
+</div>
+<!-- 烀片特效代码 结束 -->
+                   </div>
+
+                   <div class="you-tongyong">
+<!-- jq动画部分开始 -->
+<div class="wrapper">
+  
+  <ul id="left">
+    <li><a href="#">景点1</a></li>
+    <li><a href="#">景点2</a></li>
+    <li><a href="#">景点3</a></li>
+    <li><a href="#">景点4</a></li>
+    <li><a href="#">景点5</a></li>
+    <li><a href="#">景点6</a></li>
+    <li><a href="#">景点7</a></li>
+    <li><a href="#">景点8</a></li>
+    <li><a href="#">景点9</a></li>
+    <li><a href="#">景点10</a></li>
+    <li><a href="#">景点11</a></li>
+    <li><a href="#">景点12</a></li>
+    <li><a href="#">景点13</a></li>
+  </ul>
+  <ul id="center">
+    <li><a href="#"><img src="images/jq1.jpg" width="206" height="358"/></a></li>
+    <li><a href="#"><img src="images/jq2.jpg" width="206" height="358"/></a></li>
+    <li><a href="#"><img src="images/jq3.jpg" width="206" height="358"/></a></li>
+    <li><a href="#"><img src="images/jq4.jpg" width="206" height="358"/></a></li>
+    <li><a href="#"><img src="images/jq5.jpg" width="206" height="358"/></a></li>
+    <li><a href="#"><img src="images/jq6.jpg" width="206" height="358"/></a></li>
+    <li><a href="#"><img src="images/jq7.jpg" width="206" height="358"/></a></li>
+    <li><a href="#"><img src="images/jq8.jpg" width="206" height="358"/></a></li>
+    <li><a href="#"><img src="images/jq9.jpg" width="206" height="358"/></a></li>
+    <li><a href="#"><img src="images/jq10.jpg" width="206" height="358"/></a></li>
+    <li><a href="#"><img src="images/jq11.jpg" width="206" height="358"/></a></li>
+    <li><a href="#"><img src="images/jq12.jpg" width="206" height="358"/></a></li>
+    <li><a href="#"><img src="images/jq13.jpg" width="206" height="358"/></a></li>
+  </ul>
+</div>
+<!-- jq动画部分结束 -->
+                   </div>
+</div>
+<!-- 左右模板结束 -->
+<!-- 页面主体开始 -->
+<div class="ms"><h1 style="margin-top: 30px;">自驾游路线推荐之天津</h1><img src="images/z001.jpg"></div>
+<div class="pai">
+  <div class="wen"><p style="line-height: 30px; text-indent: 2em;">我的行程安排的有些满，最少需要5天，毕竟国庆期间的堵车问题比较严重。以我每年出游的估算就是高速一定会堵的，这一点是逃不掉的。售票处也一定会堵，这不可能避开的。停车场也是会的，所以各位一定要做好心理准备啊！</p>
+</div>
+</div>
+<div class="ms"><img src="images/z002.jpg"></div>
+<div class="pai">
+  <div class="wen"><p style="line-height: 30px; text-indent: 2em;">这次推荐的城市是天津，因为我就住在这里，比较熟悉。关于天津自驾游的朋友们，其实不需要担心路线的问题，因为天津真的不大，而且作为立交桥修的最好的城市。它的线路四通八达，条条大路通罗马，不需要太过于担心。但是在这里我还是会给您将一些挨得近的景点包堆说一下的。</p>
+</div>
+</div>
+<div class="ms"><img src="images/z003.jpg"></div>
+<div class="pai">
+  <div class="wen"><p style="line-height: 30px; text-indent: 2em;">第三站：古文化街
+
+九点左右我们来到古文化街，这里有天津最正宗的津味小吃，耳朵眼炸糕、煎饼果子、各种麻花……一定会让吃货的你流连忘返</p>
+</div>
+</div>
+<div class="ms"><img src="images/z004.jpg"></div>
+<div class="pai">
+  <div><p style="line-height: 30px; text-indent: 2em;">主要的情景圈还就是天津站附近：滨江道劝业场～西大大教堂～瓷房子～（过河）意式风情街～马可波罗广场～五大道～海河～天津塔～津湾广场
+
+滨江道劝业场是中国北方第一个商场，里面极大程度的保留了国民时期的建筑风格，由于天津以前是七国租界，所以天津算是一个中西合并的都市。而关于滨江道劝业场的一些传说也是有很多，鬼故事也不少，如果你是另一爱好者，可以百度搜一下然后吓唬你的小伙伴。（笑哭） </p>
+</div>
+</div>
+<div class="ms"><img src="images/z005.jpg"></div>
+<div class="pai">
+  <div><p style="line-height: 30px; text-indent: 2em;">西开大教堂就在滨江道的对面，是天津最大的教堂，至今还是信徒们每周做礼拜的地方。如果你是信徒或者非常喜欢教堂那种美丽的色彩，一定要去西开大教堂，关于这里的侠客传说有很多，如果大家好奇，可以百度一下呢 </p>
+</div>
+</div>
+<div class="ms"><img src="images/z006.jpg"></div>
+<div class="pai">
+  <div><p style="line-height: 30px; text-indent: 2em;">大家对于瓷房子的印象似乎来源于今天夏天爆出来的新闻，而且在岳云鹏和袁姗姗的电影《疯岳撬佳人》中瓷房子也是穿插的重点。这是中西合斌的典型建筑，明明是瓷器的贴片但整个房屋的造型确实西方建筑。有意思的是，所有瓷片都是房主自己收藏然后满满自己贴上的。瓷房子不大，但是真的很有意思，对瓷器感兴趣的朋友一定要去呢～
+
+出了瓷房子，门口其实就能看到很多的小三轮。是观景小三轮，可能是十块也可能是二十块，也可能是十五块，主要看你的砍价手段了。小三轮大多数都是老人家，说要带着你逛逛，然后把你送到了意大利风情街。 </p>
+</div>
+</div>
+<div class="ms"><img src="images/z007.jpg"></div>
+<div class="pai">
+  <div><p style="line-height: 30px; text-indent: 2em;">意大利风情街就是过去意大利的租界，我小时候曾经去过那里，感觉很不错。但是现在修理了一次很多好玩的东西都去除了，就成了一个卖东西的小街道。如果你喜欢西餐或者文艺餐厅，你可以去那里品尝一下。有很多外国友人在那里开餐厅，味道很棒。如果不喜欢吃那么则可以马可波罗广场看一下马可波罗钟，作为天津的地标可以很好的去拍个照片。 </p>
+</div>
+</div>
+<div class="ms"><img src="images/z008.jpg"></div>
+<div class="pai">
+  <div><p style="line-height: 30px; text-indent: 2em;">逛完之后就可以坐着小车去五大道地区了，五大道有一个非常不错的服务，那就是坐着马车逛一逛五大道。五大道是一个国民建筑群，以前是英国的租界地，中西建筑风格，住着一些有名的人。像话剧作家曹禺、军阀孙殿英的旧居、伪清政府旧居、庆王府、疙瘩楼等等人的旧居都在那里。如果你是一个历史爱好者，而且喜欢民国时期的混战故事，我觉得可以来这里看一看。 </p>
+</div>
+</div>
+<div class="pai">
+  <div><p style="line-height: 30px; text-indent: 2em;">说到相声，那是好有一笔，这让我想到了我的偶像，郭德纲。郭德纲是天津人，到了天津一定是要听相声的，可以到谦祥益相声院子。这个院子经常开办天津的相声大赛，非常的有意思。再一个就是古文化街的名流茶馆，也是听相声的不错选择哈。 </p>
+</div>
+</div>
+<div class="ms"><img src="images/z009.jpg"></div>
+
+<!-- 页面主体结束 -->
+<!-- 页面底部联系及版权开始 -->
+<div class="foot-db"><p>联系电话：18913676253 传真：18913676253 邮箱:1050944881@qq.com 地址：南京工业职业技术学院</p><p>移动1811周非帆----版权所有</p> </div>
+<!-- 页面底部联系及版权结束 -->
+</body>
+</html>
